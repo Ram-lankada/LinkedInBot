@@ -16,7 +16,8 @@ Written both in JavaScript & Python
 
 ### Connections Bot 
 **Python**
-Syntax 
+<br> 
+Syntax : 
 ```
 python3 connect.py topic1 topic2 topic3 option
 ```
@@ -24,13 +25,14 @@ Options :
 - **0** = Connect **without** sending a note
 - **1** = Connect **With** sending a note 
 
-Command
+Command : 
 ```
 python3 connect.py Google Amazon Zoho 0
 ```
 
 **JavaScript**
-Syntax 
+<br> 
+Syntax : 
 ```
 node connect.js topic1 topic2 topic3 
 ```
@@ -41,13 +43,15 @@ node connect.js Google Amazon Zoho
 
 ### Invitations accepting Bot 
 **Python**
-Command
+<br> 
+Command : 
 ```
 python3 accept.py
 ```
 
 **JavaScript**
-Command
+<br> 
+Command : 
 ```
 node acceptInvite.js 
 ```
