@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException
 import sys
 import time
 import curses
@@ -36,7 +37,7 @@ count = 0
 
 try: 
     for i in range( 1 , len( sys.argv ) ) :
-        for num in range( 1 , 10 ) : 
+        for num in range( 11 , 100 ) : 
             site = "https://www.linkedin.com/search/results/people/?keywords=" + sys.argv[i] + "&origin=GLOBAL_SEARCH_HEADER&page=" + str(num)
             driver.get(site) 
             time.sleep(2)
@@ -57,7 +58,10 @@ try:
                     # # SEND WITHOUT NOTE 
                     send = driver.find_element(By.XPATH, "//button[@aria-label='Send now']")
                     driver.execute_script("arguments[0].click();", send)
+                    time.sleep(2) 
+                    print("Connections made : " , count) 
 
+                    # # Finding connection name
                     # name = driver.find_element(By.TAG_NAME, "strong").text
                     # print( name + "\n" ) 
                     # print(f"Connected to {name} \n")
@@ -95,8 +99,15 @@ try:
                 if( count == 100 ) : 
                     print("Made 100 Connections - Come again after a week")
                     exit(1) 
-   
-except KeyboardInterrupt : 
-    print(f"Successfully accomplished {count} connections")
 
-print(f"Successfully accomplished {count} connections")
+            print(f"Made {count} connections till page-{num}")
+            print(f"-------------PAGE : {num}-------------")
+
+except (KeyboardInterrupt, NoSuchElementException ):
+    print("\n")
+    print(f"Successfully accomplished {count} connections")
+    print(f"You'll get banned on LinkedIn if you exceed {100-count} more connections this week")
+    exit(1) 
+else : 
+    print(f"Successfully accomplished {count} connections")
+    print(f"You'll get banned on LinkedIn if you exceed {100-count} more connections this week")
