@@ -17,6 +17,8 @@ if( len( sys.argv ) < 2  ) :
     print("No topic Declared!!!") 
     exit(1) 
 
+# linux path : executable_path='/usr/bin/chromedriver'
+# windows path : executable_path='/path/to/your/chromedriver/chromedriver.exe'
 service = webdriver.ChromeService(executable_path='/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=service)
 
@@ -101,7 +103,7 @@ try:
                     exit(1) 
 
             print(f"Made {count} connections till page-{num}")
-            print(f"-------------PAGE : {num}-------------")
+            print(f"-------------TURNING INTO PAGE : {num}-------------")
 
 except (KeyboardInterrupt, NoSuchElementException ):
     print("\n")
