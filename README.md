@@ -22,12 +22,14 @@ You can change those time waits in the code, if you want the process to be faste
 3. Run 'npm install'
 
 ## Chrome Driver path
-Find for executable_path in `connect.py` file and paste the below `executable_path` w.r.t your OS. 
 **Linux users** 
+<br> 
+Find for executable_path in `connect.py` file and paste the below `executable_path` w.r.t your OS. 
 ```
 executable_path='/usr/bin/chromedriver'
 ```
 **windows users** 
+<br> 
 You need to install chrome Driver and paste the chrome driver path in `executable_path`
 ```
 executable_path='/path/to/your/chromedriver/chromedriver.exe'
