@@ -9,8 +9,8 @@ LinkedInBot enables you to automatically connect to people being employed at mul
 Written both in JavaScript & Python
 
 ## Disclaimer 
-As per my findings a user can have at max of 100 connections and 250 actions per week on LinkedIn. 
-And you may get banned if you've exceeded them. 
+As per my findings a user can have at max of **100 connections** and **250 actions per week** on LinkedIn. 
+And **you may get banned** if you've exceeded them. 
 
 And i've programmed explicit time waits to let the page completely before any performing any action. 
 You can change those time waits in the code, if you want the process to be faster. 
