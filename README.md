@@ -20,6 +20,22 @@ You can change those time waits in the code, if you want the process to be faste
 1. Fork this repo --> Clone --> cd into the folder
 2. Install chrome driver onto your system
 3. Run 'npm install'
+4. Conda environment setup
+```
+conda create -n bot python=3.12.0
+```
+```
+conda activate bot
+```
+```
+pip install -r requirements.txt
+```
+## Chrome Driver installation
+1. Download chrome driver from below link
+```
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/119.0.6045.105/win64/chromedriver-win64.zip
+```
+2. Paste the extracted folder in your C Drive
 
 ## Chrome Driver path
 **Linux users** 
