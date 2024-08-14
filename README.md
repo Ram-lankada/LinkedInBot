@@ -8,6 +8,9 @@
 LinkedInBot enables you to automatically connect to people being employed at multiple MNCs based on topic search, and accepts all the Connection invitations you've received. 
 Written both in JavaScript & Python
 
+## Demonstration
+https://www.linkedin.com/posts/ram-ganesh-1b2189208_linkedinautomation-linkedinbot-connections-activity-7124272181374590976-uMtp?utm_source=share&utm_medium=member_desktop
+
 ## Disclaimer 
 As per my findings a user can have at max of **100 connections** and **250 actions per week** on LinkedIn. 
 And **you may get banned** if you've exceeded them. 
